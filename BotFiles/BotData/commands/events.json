@@ -1,0 +1,826 @@
+{
+  "command": [
+    {
+      "name": "User Joins Server",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "newuser"
+      }
+    },
+    {
+      "name": "Any Message",
+      "perms": [],
+      "actions": [],
+      "var": {}
+    },
+    {
+      "name": "User Kicked",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "kickuser"
+      }
+    },
+    {
+      "name": "User Banned",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "banuser"
+      }
+    },
+    {
+      "name": "Bot Initialization",
+      "perms": [],
+      "actions": [],
+      "var": {}
+    },
+    {
+      "name": "Channel Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdchannel"
+      }
+    },
+    {
+      "name": "Channel Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedchannel"
+      }
+    },
+    {
+      "name": "Channel Pins Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatepinschannel"
+      }
+    },
+    {
+      "name": "Channel Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatechannel"
+      }
+    },
+    {
+      "name": "Emoji Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdemoji"
+      }
+    },
+    {
+      "name": "Emoji Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedemoji"
+      }
+    },
+    {
+      "name": "Emoji Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatedemoji"
+      }
+    },
+    {
+      "name": "Guild Ban Remove",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Available",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Speaking",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Unavailable",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Typing Start",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "User Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Button Interaction",
+      "perms": [],
+      "actions": [
+        {
+          "name": "Button",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "open": [],
+            "claim": [
+              {
+                "name": "checkrole",
+                "category": "User Action",
+                "type": "Check If User Has Role",
+                "trueActions": [
+                  {
+                    "name": "SendClaim",
+                    "category": "Message",
+                    "type": "Send Embed",
+                    "messageActionRows": [],
+                    "channelname": "${tempVars.buttoninteraction.channelId}",
+                    "color": "0DFF05",
+                    "title": "The ticket has been claimed.",
+                    "url": "",
+                    "authorname": "",
+                    "authorimageurl": "",
+                    "authorlink": "",
+                    "description": "${tempVars.buttoninteraction.member.displayName} is now in charge of this Ticket.",
+                    "thumbnail": "",
+                    "image": "",
+                    "footer": "",
+                    "timestamp": "false",
+                    "savetovariable": "",
+                    "savetovariabletype": "temp"
+                  },
+                  {
+                    "name": "delete_1_1_1",
+                    "category": "Interaction",
+                    "type": "Delete Interaction Reply",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.buttoninteraction}"
+                  }
+                ],
+                "falseActions": [
+                  {
+                    "name": "senderror",
+                    "category": "Message",
+                    "type": "Send Message",
+                    "messageActionRows": [],
+                    "channelname": "${tempVars.buttoninteraction.channelId}",
+                    "messagetext": "You dont have permissions to claim the ticket.",
+                    "savetovariable": "error",
+                    "savetovariabletype": "temp"
+                  },
+                  {
+                    "name": "delete_1_1_1_1_1",
+                    "category": "Interaction",
+                    "type": "Delete Interaction Reply",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.buttoninteraction}"
+                  },
+                  {
+                    "name": "wait_1_1",
+                    "category": "Control",
+                    "type": "Wait",
+                    "messageActionRows": [],
+                    "waitduration": "10",
+                    "unit": "seconds"
+                  },
+                  {
+                    "name": "del",
+                    "category": "Message",
+                    "type": "Delete Message",
+                    "messageActionRows": [],
+                    "varname": "${tempVars.error.id}",
+                    "channelname": "${tempVars.error.channel.id}"
+                  }
+                ],
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "role": "997591186854391821"
+              }
+            ],
+            "close": [
+              {
+                "name": "check",
+                "category": "User Action",
+                "type": "Check If User Has Role",
+                "trueActions": [
+                  {
+                    "name": "Dele",
+                    "category": "Channel Action",
+                    "type": "Delete Channel",
+                    "messageActionRows": [],
+                    "channelname": "${tempVars.buttoninteraction.channelId}",
+                    "reason": ""
+                  }
+                ],
+                "falseActions": [
+                  {
+                    "name": "senderror_1",
+                    "category": "Message",
+                    "type": "Send Message",
+                    "messageActionRows": [],
+                    "channelname": "${tempVars.buttoninteraction.channelId}",
+                    "messagetext": "You dont have permissions to close the ticket.",
+                    "savetovariable": "",
+                    "savetovariabletype": "temp"
+                  },
+                  {
+                    "name": "delete_1_1_1_1",
+                    "category": "Interaction",
+                    "type": "Delete Interaction Reply",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.buttoninteraction}"
+                  },
+                  {
+                    "name": "wait_1",
+                    "category": "Control",
+                    "type": "Wait",
+                    "messageActionRows": [],
+                    "waitduration": "10",
+                    "unit": "seconds"
+                  },
+                  {
+                    "name": "del_1",
+                    "category": "Message",
+                    "type": "Delete Message",
+                    "messageActionRows": [],
+                    "varname": "${tempVars.error.id}",
+                    "channelname": "${tempVars.error.channel.id}"
+                  }
+                ],
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "role": "997591186854391821"
+              }
+            ],
+            "uprison": [
+              {
+                "name": "checkr",
+                "category": "User Action",
+                "type": "Check If User Has Role",
+                "trueActions": [
+                  {
+                    "name": "addrole",
+                    "category": "User Action",
+                    "type": "Add Role to User",
+                    "messageActionRows": [],
+                    "user": "${tempVars.buttoninteraction.member.id}",
+                    "rolename": "grdgdfg"
+                  }
+                ],
+                "falseActions": [],
+                "messageActionRows": [],
+                "user": "${tempVars.buttoninteraction.member.id}",
+                "role": "1096954200749002813"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        }
+      ],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Select Interaction",
+      "perms": [],
+      "actions": [
+        {
+          "name": "select",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "yes": [
+              {
+                "name": "remove role",
+                "category": "User Action",
+                "type": "Remove Role From User",
+                "messageActionRows": [],
+                "user": "<@${tempVars.member}>",
+                "rolename": "1096913922273071155",
+                "reason": "Unprisoned"
+              },
+              {
+                "name": "addcasual",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.member}",
+                "rolename": "Casual"
+              },
+              {
+                "name": "update",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticket_channel.id}",
+                "permid": "${tempVars.member}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "Delete_1",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "no": [
+              {
+                "name": "Delete message",
+                "category": "Message",
+                "type": "Delete Message",
+                "messageActionRows": [],
+                "varname": "${tempVars.confirmmessage.id}",
+                "channelname": "${tempVars.selectinteraction.channelId}"
+              },
+              {
+                "name": "Delete",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "openu": [
+              {
+                "name": "openticket",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "Unprison - ${tempVars.selectinteraction.member.id}",
+                "chancategory": "1096945365774770187",
+                "reason": "",
+                "channeltype": "Text",
+                "savetovariable": "ticket_channel",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "permissions_1",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticket_channel.id}",
+                "permid": "${dbsVars.guild.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "wait1sec_4",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "permissions",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticket_channel.id}",
+                "permid": "${tempVars.selectinteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "sendping",
+                "category": "Message",
+                "type": "Send Message",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticket_channel.id}",
+                "messagetext": "<@811210927126872094> <@991758864544448562>",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "SendTicketEmbed",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Claim",
+                        "customid": "claim",
+                        "style": "PRIMARY",
+                        "emoji": "✅",
+                        "URL": "",
+                        "ephemeral": false
+                      },
+                      {
+                        "label": "Close",
+                        "customid": "close",
+                        "style": "DANGER",
+                        "emoji": "🔒",
+                        "URL": "",
+                        "ephemeral": false
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "${tempVars.ticket_channel.id}",
+                "color": "0FFF8F",
+                "title": "Welcome to Unprison",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "1. Tell us why you got the role \"Schlimmes kind\". \n2. Tell us why you want to be unprisoned\n**Our staff team [Kilian, Flo] will answer as soon as possible**",
+                "thumbnail": "https://cdn.discordapp.com/attachments/997590758460751882/1091053425040572577/3A7CA4E2-D685-4D2E-B9CE-5E49926C77D3.jpg",
+                "image": "",
+                "footer": "",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "Deletet",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ],
+            "openq": [
+              {
+                "name": "openticket_1",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "Unprison - ${tempVars.selectinteraction.member.id}",
+                "chancategory": "1099717502369550397",
+                "reason": "",
+                "channeltype": "Text",
+                "savetovariable": "question_channel",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "permissions_1_1",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticket_channel.id}",
+                "permid": "${dbsVars.guild.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "wait1sec_4_1",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "permissions_2",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticket_channel.id}",
+                "permid": "${tempVars.selectinteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "sendping_1",
+                "category": "Message",
+                "type": "Send Message",
+                "messageActionRows": [],
+                "channelname": "${tempVars.question_channel.id}",
+                "messagetext": "<@811210927126872094> <@991758864544448562>",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "SendTicketEmbed_1",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Claim",
+                        "customid": "claim",
+                        "style": "PRIMARY",
+                        "emoji": "✅",
+                        "URL": "",
+                        "ephemeral": false
+                      },
+                      {
+                        "label": "Close",
+                        "customid": "close",
+                        "style": "DANGER",
+                        "emoji": "🔒",
+                        "URL": "",
+                        "ephemeral": false
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "${tempVars.question_channel.id}",
+                "color": "0FFF8F",
+                "title": "Welcome to Questions/Other",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "What is your question?\n\nOur Support Team [Kilian, Flo] will help you as soon as possible.",
+                "thumbnail": "",
+                "image": "",
+                "footer": "",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "deletetin",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.selectinteraction}"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.selectinteraction.values}"
+        }
+      ],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Command Interaction",
+      "perms": [],
+      "actions": [
+        {
+          "name": "Slash",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "setup": [
+              {
+                "name": "SendEmbed",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "select",
+                    "customid": "TicketType",
+                    "placeholdertext": "Ticket Type",
+                    "selectoptions": [
+                      {
+                        "label": "Unprison",
+                        "value": "openu",
+                        "description": "Open a unprison ticket",
+                        "emoji": "1️⃣",
+                        "defaultoption": false
+                      },
+                      {
+                        "label": "Question/Other",
+                        "value": "openq",
+                        "description": "Open a question or other ticket",
+                        "emoji": "2️⃣",
+                        "defaultoption": false
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "1096914045279420546",
+                "color": "0AEBFF",
+                "title": "Unprison",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Click on the button below to start the unprison application\n[Spam = Timeout]",
+                "thumbnail": "",
+                "image": "",
+                "footer": "Alessio = 😊",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "delete",
+                "category": "Interaction",
+                "type": "Delete Interaction Reply",
+                "messageActionRows": [],
+                "interactionobject": "${tempVars.commandinteraction}"
+              }
+            ],
+            "unprison": [
+              {
+                "name": "checkroleowner",
+                "category": "User Action",
+                "type": "Check If User Has Role",
+                "trueActions": [
+                  {
+                    "name": "getuser",
+                    "category": "Interaction",
+                    "type": "Get Interaction Option",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.commandinteraction}",
+                    "optiontype": "USER",
+                    "commandoptionname": "member",
+                    "varname": "member",
+                    "savevartype": "temp"
+                  },
+                  {
+                    "name": "Sendconfirm",
+                    "category": "Message",
+                    "type": "Send Embed",
+                    "messageActionRows": [
+                      {
+                        "rowtype": "select",
+                        "customid": "confirm",
+                        "placeholdertext": "Enter choice",
+                        "selectoptions": [
+                          {
+                            "label": "Confirm",
+                            "value": "yes",
+                            "description": "Confirm that you want to unprison this user.",
+                            "emoji": "✅",
+                            "defaultoption": false
+                          },
+                          {
+                            "label": "Decline",
+                            "value": "no",
+                            "description": "Decline that you want to unprison this user.",
+                            "emoji": "❌",
+                            "defaultoption": false
+                          }
+                        ]
+                      }
+                    ],
+                    "channelname": "${tempVars.commandinteraction.channelId}",
+                    "color": "1AFF00",
+                    "title": "Confirm",
+                    "url": "",
+                    "authorname": "",
+                    "authorimageurl": "",
+                    "authorlink": "",
+                    "description": "Are you sure you want to unprison this ${tempVars.member} ?",
+                    "thumbnail": "",
+                    "image": "",
+                    "footer": "",
+                    "timestamp": "false",
+                    "savetovariable": "confirmmessage",
+                    "savetovariabletype": "temp"
+                  },
+                  {
+                    "name": "Delete_1_1",
+                    "category": "Interaction",
+                    "type": "Delete Interaction Reply",
+                    "messageActionRows": [],
+                    "interactionobject": "${tempVars.commandinteraction}"
+                  }
+                ],
+                "falseActions": [
+                  {
+                    "name": "senderror_1_1",
+                    "category": "Message",
+                    "type": "Send Message",
+                    "messageActionRows": [],
+                    "channelname": "${tempVars.commandinteraction.channelId}",
+                    "messagetext": "You dont have permissions to unprison a user.",
+                    "savetovariable": "",
+                    "savetovariabletype": "temp"
+                  }
+                ],
+                "messageActionRows": [],
+                "user": "${tempVars.commandinteraction.member.id}",
+                "role": "997591186854391821"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.commandinteraction.commandName}"
+        }
+      ],
+      "var": {
+        "channel": ""
+      }
+    }
+  ]
+}

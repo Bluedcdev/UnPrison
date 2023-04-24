@@ -1,0 +1,60 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "actions": [
+        {
+          "name": "ask",
+          "category": "Message",
+          "type": "Ask ChatGPT",
+          "messageActionRows": [],
+          "apikey": "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",
+          "model": "",
+          "question": "Hi",
+          "vartype": "temp",
+          "varname": ""
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "actions": [
+        {
+          "name": "show info",
+          "category": "Message",
+          "type": "Send Message",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.DefaultChannel.id}",
+          "messagetext": "Command Author: ${dbsVars.CommandAuthor.displayName}\nTagged author: <@${dbsVars.CommandAuthor.id}>\nYou can insert more values by clicking the \"Insert Variable\" button next to this field!",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "setup",
+      "description": "setup unprison ",
+      "ephemeral": false,
+      "options": []
+    },
+    {
+      "name": "random",
+      "description": "get a random message",
+      "ephemeral": false,
+      "options": []
+    },
+    {
+      "name": "unprison",
+      "description": "an command that unpisons a user [only owners can use it]",
+      "ephemeral": false,
+      "options": [
+        {
+          "name": "member",
+          "description": "get the member",
+          "type": "USER",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

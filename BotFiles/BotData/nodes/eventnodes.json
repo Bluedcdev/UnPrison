@@ -1,0 +1,2468 @@
+{
+  "nodes": [
+    {
+      "type": "event",
+      "name": "User Joins Server",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "newuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 99,
+      "y": 90,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Any Message",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888",
+      "variables": {},
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 101,
+      "y": 400,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Kicked",
+      "guid": "69ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "kickuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 99,
+      "y": 200,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Banned",
+      "guid": "77ebbc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "banuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 300,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Bot Initialization",
+      "guid": "0101bc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {},
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 500,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Create",
+      "guid": "3333bc23-2993-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "channel": "createdchannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 610,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Delete",
+      "guid": "3387bc23-2993-4f05-ab69-bc9ecb49877e",
+      "variables": {
+        "channel": "deletedchannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 720,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Pins Update",
+      "guid": "1287bc23-2993-dudu-ab69-bc9ecb49877e",
+      "variables": {
+        "channel": "updatepinschannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 830,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Update",
+      "guid": "0009zzv3-2993-dudu-ab69-bc9ecb49877e",
+      "variables": {
+        "channel": "updatechannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 940,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Emoji Create",
+      "guid": "0008zzv3-2993-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": "createdemoji"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1050,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Emoji Delete",
+      "guid": "0028zzv3-2993-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": "deletedemoji"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1160,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Emoji Update",
+      "guid": "1128zzv3-2773-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": "updatedemoji"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1270,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Ban Remove",
+      "guid": "0909zzv3-2773-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1370,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Create",
+      "guid": "0909zzv3-2773-dudu-3456-bc9hhb49877e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1480,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Delete",
+      "guid": "0909zzv3-2773-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1590,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Member Available",
+      "guid": "0909zzv3-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1700,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Member Speaking",
+      "guid": "09uuuiv3-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1810,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Member Update",
+      "guid": "0yyuuiv3-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1920,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Unavailable",
+      "guid": "0yyuukkk-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2030,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Update",
+      "guid": "0yyuukkk-2773-dudu-ab69-bc9h9890202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2140,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Message Delete",
+      "guid": "0y111112-2773-dudu-ab69-bc9h9890202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2250,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Message Update",
+      "guid": "0y111112-2773-dudu-ab69-bc9h9333202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2360,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Role Create",
+      "guid": "0y111112-2773-d44u-ab69-bc9h9333202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2470,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Role Delete",
+      "guid": "0y111112-2773-d44u-ab69-b5555633202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2580,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Role Update",
+      "guid": "0y111pg2-2773-d44u-ayu9-b5555633202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2690,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Typing Start",
+      "guid": "0y1737g2-2773-d44u-ayu9-b5555633202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2798,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Update",
+      "guid": "0y1737g2-2773-d44u-ayu9-b5555tttyt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2910,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Button Interaction",
+      "guid": "0y1700g2-2773-d44u-ayu9-b5555886yt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "fd5e1d15-4729-4998-a3a2-ea23d6bdf9ab"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 3020,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Select Interaction",
+      "guid": "0y17qzg2-2773-pp4u-ayu9-b55q4886yt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "a3b608bc-a8a2-4cec-859b-43d3ddcf6c0b"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 80,
+      "y": 3716,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Command Interaction",
+      "guid": "0y17nnm2-2773-pp4u-ayu9-b55q4886yt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "0b73e9bb-02c8-45f5-ba72-b3eed8765a4d"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 3240,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "Slash",
+      "guid": "0b73e9bb-02c8-45f5-ba72-b3eed8765a4d",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "setup",
+          "connections": [
+            "d8807af6-e60c-43eb-a28b-4ec7c776a1fb"
+          ]
+        },
+        {
+          "label": "unprison",
+          "connections": [
+            "cafcfbd3-6e67-4440-bf3b-cab8d1c5744d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y17nnm2-2773-pp4u-ayu9-b55q4886yt2e"
+        }
+      ],
+      "x": 300,
+      "y": 3240,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.commandinteraction.commandName}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1",
+        "switchvalue2"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "setup",
+        "unprison"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "SendEmbed",
+      "guid": "d8807af6-e60c-43eb-a28b-4ec7c776a1fb",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "5bae5a9f-0e3b-4bcf-80a2-bed1c1d96828"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0b73e9bb-02c8-45f5-ba72-b3eed8765a4d"
+        }
+      ],
+      "x": 478,
+      "y": 3441,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1096914045279420546",
+        "0AEBFF",
+        "Unprison",
+        "",
+        "",
+        "",
+        "",
+        "Click on the button below to start the unprison application\n[Spam = Timeout]",
+        "",
+        "",
+        "Alessio = 😊",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "select",
+          "customid": "TicketType",
+          "placeholdertext": "Ticket Type",
+          "selectoptions": [
+            {
+              "label": "Unprison",
+              "value": "openu",
+              "description": "Open a unprison ticket",
+              "emoji": "1️⃣",
+              "defaultoption": false
+            },
+            {
+              "label": "Question/Other",
+              "value": "openq",
+              "description": "Open a question or other ticket",
+              "emoji": "2️⃣",
+              "defaultoption": false
+            }
+          ]
+        }
+      ],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Button",
+      "guid": "fd5e1d15-4729-4998-a3a2-ea23d6bdf9ab",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "open",
+          "connections": []
+        },
+        {
+          "label": "claim",
+          "connections": [
+            "b676685d-10c7-4419-9212-19979424a01d"
+          ]
+        },
+        {
+          "label": "close",
+          "connections": [
+            "0f9b50ba-fe71-445b-aeb7-8c730ecd0066"
+          ]
+        },
+        {
+          "label": "uprison",
+          "connections": [
+            "215f00a3-9c22-4c60-9304-4bee80956138"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
+        }
+      ],
+      "x": 310,
+      "y": 3014,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.buttoninteraction.customId}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1",
+        "switchvalue2",
+        "switchvalue3",
+        "switchvalue4"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "open",
+        "claim",
+        "close",
+        "uprison"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "openticket",
+      "guid": "25b48e56-4f83-43bf-80b3-d8b2f514fb03",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "ticket_channel",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "0d6d9dce-7b67-4486-8c3b-186230c632b6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a3b608bc-a8a2-4cec-859b-43d3ddcf6c0b"
+        }
+      ],
+      "x": 503,
+      "y": 3987,
+      "rtype": "Channel Action",
+      "rsubtype": "Create Channel",
+      "formdata": [
+        "Unprison - ${tempVars.selectinteraction.member.id}",
+        "1096945365774770187",
+        "",
+        "Text",
+        "ticket_channel",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "chancategory",
+        "reason",
+        "channeltype",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "permissions",
+      "guid": "1979e36d-ad1e-4693-946e-f40f796529b6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "153ad967-aa3d-4566-8c97-8da927e5c7ca"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "de72e59c-a662-4b23-8579-a1ba0876ceaf"
+        }
+      ],
+      "x": 1021,
+      "y": 4024,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticket_channel.id}",
+        "${tempVars.selectinteraction.member.id}",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "permissions_1",
+      "guid": "0d6d9dce-7b67-4486-8c3b-186230c632b6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "de72e59c-a662-4b23-8579-a1ba0876ceaf"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "25b48e56-4f83-43bf-80b3-d8b2f514fb03"
+        }
+      ],
+      "x": 681,
+      "y": 4003,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticket_channel.id}",
+        "${dbsVars.guild.id}",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "SendTicketEmbed",
+      "guid": "4bcd0501-33b1-44f3-9f00-ee336bf40c83",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "5cc24334-399c-4fe2-a9a8-af37db846a0b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "153ad967-aa3d-4566-8c97-8da927e5c7ca"
+        }
+      ],
+      "x": 1358,
+      "y": 4010,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.ticket_channel.id}",
+        "0FFF8F",
+        "Welcome to Unprison",
+        "",
+        "",
+        "",
+        "",
+        "1. Tell us why you got the role \"Schlimmes kind\". \n2. Tell us why you want to be unprisoned\n**Our staff team [Kilian, Flo] will answer as soon as possible**",
+        "https://cdn.discordapp.com/attachments/997590758460751882/1091053425040572577/3A7CA4E2-D685-4D2E-B9CE-5E49926C77D3.jpg",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "button",
+          "buttons": [
+            {
+              "label": "Claim",
+              "customid": "claim",
+              "style": "PRIMARY",
+              "emoji": "✅",
+              "URL": "",
+              "ephemeral": false
+            },
+            {
+              "label": "Close",
+              "customid": "close",
+              "style": "DANGER",
+              "emoji": "🔒",
+              "URL": "",
+              "ephemeral": false
+            }
+          ]
+        }
+      ],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "SendClaim",
+      "guid": "98879f95-cca7-40c5-b057-ab2a187b2db5",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "228fbae4-3d6b-4ca4-8a3c-d4843a78112d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b676685d-10c7-4419-9212-19979424a01d"
+        }
+      ],
+      "x": 862,
+      "y": 2947,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "0DFF05",
+        "The ticket has been claimed.",
+        "",
+        "",
+        "",
+        "",
+        "${tempVars.buttoninteraction.member.displayName} is now in charge of this Ticket.",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "senderror",
+      "guid": "485489f8-819d-44b7-acd9-2872c00ae177",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "error",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8166df47-61a9-4089-bc24-42231dabb8b9"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b676685d-10c7-4419-9212-19979424a01d"
+        }
+      ],
+      "x": 710,
+      "y": 3083,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "You dont have permissions to claim the ticket.",
+        "error",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "del",
+      "guid": "3d252ba0-e8e3-4e7f-8537-5896837dd2cf",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fd5627ee-c626-4a2e-b845-648fc41864f8"
+        }
+      ],
+      "x": 1252,
+      "y": 3130,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${tempVars.error.id}",
+        "${tempVars.error.channel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "senderror_1",
+      "guid": "e82c1589-ae62-436a-aaaf-358a5b41f97e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "4bf87353-38db-478a-b57b-fb556ed27f85"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0f9b50ba-fe71-445b-aeb7-8c730ecd0066"
+        }
+      ],
+      "x": 664,
+      "y": 3318,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "You dont have permissions to close the ticket.",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "wait_1",
+      "guid": "8e999f4d-d646-495b-a314-f5b7bc8dc183",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "5d2696b1-5055-4ba2-bb4e-95727fb6c6f8"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4bf87353-38db-478a-b57b-fb556ed27f85"
+        }
+      ],
+      "x": 1024,
+      "y": 3338,
+      "rtype": "Control",
+      "rsubtype": "Wait",
+      "formdata": [
+        "10",
+        "seconds"
+      ],
+      "formnames": [
+        "waitduration",
+        "unit"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "del_1",
+      "guid": "5d2696b1-5055-4ba2-bb4e-95727fb6c6f8",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8e999f4d-d646-495b-a314-f5b7bc8dc183"
+        }
+      ],
+      "x": 1198,
+      "y": 3322,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${tempVars.error.id}",
+        "${tempVars.error.channel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "Dele",
+      "guid": "0b2b2ba9-4849-43ec-a6b3-eeeb9697d804",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0f9b50ba-fe71-445b-aeb7-8c730ecd0066"
+        }
+      ],
+      "x": 690,
+      "y": 3206,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete Channel",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        ""
+      ],
+      "formnames": [
+        "channelname",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "delete",
+      "guid": "5bae5a9f-0e3b-4bcf-80a2-bed1c1d96828",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d8807af6-e60c-43eb-a28b-4ec7c776a1fb"
+        }
+      ],
+      "x": 733,
+      "y": 3585,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.commandinteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "checkrole",
+      "guid": "b676685d-10c7-4419-9212-19979424a01d",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "98879f95-cca7-40c5-b057-ab2a187b2db5"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "485489f8-819d-44b7-acd9-2872c00ae177"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fd5e1d15-4729-4998-a3a2-ea23d6bdf9ab"
+        }
+      ],
+      "x": 497,
+      "y": 2969,
+      "rtype": "User Action",
+      "rsubtype": "Check If User Has Role",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "997591186854391821"
+      ],
+      "formnames": [
+        "user",
+        "role"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "check",
+      "guid": "0f9b50ba-fe71-445b-aeb7-8c730ecd0066",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "0b2b2ba9-4849-43ec-a6b3-eeeb9697d804"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "e82c1589-ae62-436a-aaaf-358a5b41f97e"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fd5e1d15-4729-4998-a3a2-ea23d6bdf9ab"
+        }
+      ],
+      "x": 488,
+      "y": 3126,
+      "rtype": "User Action",
+      "rsubtype": "Check If User Has Role",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "997591186854391821"
+      ],
+      "formnames": [
+        "user",
+        "role"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "delete_1_1_1",
+      "guid": "228fbae4-3d6b-4ca4-8a3c-d4843a78112d",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "98879f95-cca7-40c5-b057-ab2a187b2db5"
+        }
+      ],
+      "x": 1034,
+      "y": 2947,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.buttoninteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "delete_1_1_1_1",
+      "guid": "4bf87353-38db-478a-b57b-fb556ed27f85",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8e999f4d-d646-495b-a314-f5b7bc8dc183"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e82c1589-ae62-436a-aaaf-358a5b41f97e"
+        }
+      ],
+      "x": 843,
+      "y": 3324,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.buttoninteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "delete_1_1_1_1_1",
+      "guid": "8166df47-61a9-4089-bc24-42231dabb8b9",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "fd5627ee-c626-4a2e-b845-648fc41864f8"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "485489f8-819d-44b7-acd9-2872c00ae177"
+        }
+      ],
+      "x": 885,
+      "y": 3101,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.buttoninteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "sendping",
+      "guid": "153ad967-aa3d-4566-8c97-8da927e5c7ca",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "4bcd0501-33b1-44f3-9f00-ee336bf40c83"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "1979e36d-ad1e-4693-946e-f40f796529b6"
+        }
+      ],
+      "x": 1192,
+      "y": 4017,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.ticket_channel.id}",
+        "<@811210927126872094> <@991758864544448562>",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "checkr",
+      "guid": "215f00a3-9c22-4c60-9304-4bee80956138",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "fd526330-d7cd-43b1-804b-fb51f72c74e6"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fd5e1d15-4729-4998-a3a2-ea23d6bdf9ab"
+        }
+      ],
+      "x": 488,
+      "y": 3296,
+      "rtype": "User Action",
+      "rsubtype": "Check If User Has Role",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "1096954200749002813"
+      ],
+      "formnames": [
+        "user",
+        "role"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "addrole",
+      "guid": "fd526330-d7cd-43b1-804b-fb51f72c74e6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "215f00a3-9c22-4c60-9304-4bee80956138"
+        }
+      ],
+      "x": 674,
+      "y": 3452,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.buttoninteraction.member.id}",
+        "grdgdfg"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "wait1sec_4",
+      "guid": "de72e59c-a662-4b23-8579-a1ba0876ceaf",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "1979e36d-ad1e-4693-946e-f40f796529b6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0d6d9dce-7b67-4486-8c3b-186230c632b6"
+        }
+      ],
+      "x": 847,
+      "y": 4020,
+      "rtype": "Control",
+      "rsubtype": "Wait",
+      "formdata": [
+        "1",
+        "seconds"
+      ],
+      "formnames": [
+        "waitduration",
+        "unit"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "wait_1_1",
+      "guid": "fd5627ee-c626-4a2e-b845-648fc41864f8",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "3d252ba0-e8e3-4e7f-8537-5896837dd2cf"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8166df47-61a9-4089-bc24-42231dabb8b9"
+        }
+      ],
+      "x": 1058,
+      "y": 3121,
+      "rtype": "Control",
+      "rsubtype": "Wait",
+      "formdata": [
+        "10",
+        "seconds"
+      ],
+      "formnames": [
+        "waitduration",
+        "unit"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "test",
+      "guid": "ebe595ca-10fd-4f28-b624-2c6155c744d6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": ""
+        }
+      ],
+      "x": 1120,
+      "y": 3505,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.commandinteraction.channelId}",
+        "${tempVars.Response.Response}",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Sendconfirm",
+      "guid": "1675a8e7-8b30-4aa8-99fd-9d0216f4b9cd",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "confirmmessage",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "7bb388b4-1173-4502-99e0-defeece97b3c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "153655fc-b152-4685-874a-3e3391e36538"
+        }
+      ],
+      "x": 223,
+      "y": 3584,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.commandinteraction.channelId}",
+        "1AFF00",
+        "Confirm",
+        "",
+        "",
+        "",
+        "",
+        "Are you sure you want to unprison this ${tempVars.member} ?",
+        "",
+        "",
+        "",
+        "false",
+        "confirmmessage",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "select",
+          "customid": "confirm",
+          "placeholdertext": "Enter choice",
+          "selectoptions": [
+            {
+              "label": "Confirm",
+              "value": "yes",
+              "description": "Confirm that you want to unprison this user.",
+              "emoji": "✅",
+              "defaultoption": false
+            },
+            {
+              "label": "Decline",
+              "value": "no",
+              "description": "Decline that you want to unprison this user.",
+              "emoji": "❌",
+              "defaultoption": false
+            }
+          ]
+        }
+      ],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "getuser",
+      "guid": "153655fc-b152-4685-874a-3e3391e36538",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "1675a8e7-8b30-4aa8-99fd-9d0216f4b9cd"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "cafcfbd3-6e67-4440-bf3b-cab8d1c5744d"
+        }
+      ],
+      "x": 4,
+      "y": 3555,
+      "rtype": "Interaction",
+      "rsubtype": "Get Interaction Option",
+      "formdata": [
+        "${tempVars.commandinteraction}",
+        "USER",
+        "member",
+        "member",
+        "temp"
+      ],
+      "formnames": [
+        "interactionobject",
+        "optiontype",
+        "commandoptionname",
+        "varname",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "select",
+      "guid": "a3b608bc-a8a2-4cec-859b-43d3ddcf6c0b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "yes",
+          "connections": [
+            "d61a669f-7d65-42a2-9a14-309543965c5c"
+          ]
+        },
+        {
+          "label": "no",
+          "connections": [
+            "05f803a8-1503-42bf-b437-b9bb83576107"
+          ]
+        },
+        {
+          "label": "openu",
+          "connections": [
+            "25b48e56-4f83-43bf-80b3-d8b2f514fb03"
+          ]
+        },
+        {
+          "label": "openq",
+          "connections": [
+            "7cabeba0-2281-440b-b9ac-288fdbda87d1"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y17qzg2-2773-pp4u-ayu9-b55q4886yt2e"
+        }
+      ],
+      "x": 284,
+      "y": 3731,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.selectinteraction.values}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1",
+        "switchvalue2",
+        "switchvalue3",
+        "switchvalue4"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "yes",
+        "no",
+        "openu",
+        "openq"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "remove role",
+      "guid": "d61a669f-7d65-42a2-9a14-309543965c5c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f141d2ed-33c3-4121-8d52-8564b44290ab"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a3b608bc-a8a2-4cec-859b-43d3ddcf6c0b"
+        }
+      ],
+      "x": 527,
+      "y": 3723,
+      "rtype": "User Action",
+      "rsubtype": "Remove Role From User",
+      "formdata": [
+        "<@${tempVars.member}>",
+        "1096913922273071155",
+        "Unprisoned"
+      ],
+      "formnames": [
+        "user",
+        "roleName",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "addcasual",
+      "guid": "f141d2ed-33c3-4121-8d52-8564b44290ab",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c466d726-b2da-48f6-8336-f88975858d5a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d61a669f-7d65-42a2-9a14-309543965c5c"
+        }
+      ],
+      "x": 722,
+      "y": 3726,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.member}",
+        "Casual"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Delete message",
+      "guid": "05f803a8-1503-42bf-b437-b9bb83576107",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c7c7b9e2-7145-4c8d-b430-7dcb7c1590c6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a3b608bc-a8a2-4cec-859b-43d3ddcf6c0b"
+        }
+      ],
+      "x": 507,
+      "y": 3842,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${tempVars.confirmmessage.id}",
+        "${tempVars.selectinteraction.channelId}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Delete",
+      "guid": "c7c7b9e2-7145-4c8d-b430-7dcb7c1590c6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "05f803a8-1503-42bf-b437-b9bb83576107"
+        }
+      ],
+      "x": 706,
+      "y": 3864,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.selectinteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Delete_1",
+      "guid": "f989216d-bef2-4081-b70d-9e2d3cd77744",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c466d726-b2da-48f6-8336-f88975858d5a"
+        }
+      ],
+      "x": 1097,
+      "y": 3761,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.selectinteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "Delete_1_1",
+      "guid": "7bb388b4-1173-4502-99e0-defeece97b3c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "1675a8e7-8b30-4aa8-99fd-9d0216f4b9cd"
+        }
+      ],
+      "x": 410,
+      "y": 3562,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.commandinteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "checkroleowner",
+      "guid": "cafcfbd3-6e67-4440-bf3b-cab8d1c5744d",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "true",
+          "connections": [
+            "153655fc-b152-4685-874a-3e3391e36538"
+          ]
+        },
+        {
+          "label": "false",
+          "connections": [
+            "b15bb023-6c1e-4d43-b0b5-27b5d14d95da"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0b73e9bb-02c8-45f5-ba72-b3eed8765a4d"
+        }
+      ],
+      "x": 128,
+      "y": 3358,
+      "rtype": "User Action",
+      "rsubtype": "Check If User Has Role",
+      "formdata": [
+        "${tempVars.commandinteraction.member.id}",
+        "997591186854391821"
+      ],
+      "formnames": [
+        "user",
+        "role"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "senderror_1_1",
+      "guid": "b15bb023-6c1e-4d43-b0b5-27b5d14d95da",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "cafcfbd3-6e67-4440-bf3b-cab8d1c5744d"
+        }
+      ],
+      "x": 300,
+      "y": 3435,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.commandinteraction.channelId}",
+        "You dont have permissions to unprison a user.",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "update",
+      "guid": "c466d726-b2da-48f6-8336-f88975858d5a",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f989216d-bef2-4081-b70d-9e2d3cd77744"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f141d2ed-33c3-4121-8d52-8564b44290ab"
+        }
+      ],
+      "x": 897,
+      "y": 3748,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticket_channel.id}",
+        "${tempVars.member}",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "openticket_1",
+      "guid": "7cabeba0-2281-440b-b9ac-288fdbda87d1",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "question_channel",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f8d4e3f0-1138-4235-9f59-2c994c99b855"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a3b608bc-a8a2-4cec-859b-43d3ddcf6c0b"
+        }
+      ],
+      "x": 499,
+      "y": 4113,
+      "rtype": "Channel Action",
+      "rsubtype": "Create Channel",
+      "formdata": [
+        "Unprison - ${tempVars.selectinteraction.member.id}",
+        "1099717502369550397",
+        "",
+        "Text",
+        "question_channel",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "chancategory",
+        "reason",
+        "channeltype",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "permissions_1_1",
+      "guid": "f8d4e3f0-1138-4235-9f59-2c994c99b855",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "2a65cbbf-e1e3-4711-a50a-e8327c6a31ce"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7cabeba0-2281-440b-b9ac-288fdbda87d1"
+        }
+      ],
+      "x": 687,
+      "y": 4121,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticket_channel.id}",
+        "${dbsVars.guild.id}",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "wait1sec_4_1",
+      "guid": "2a65cbbf-e1e3-4711-a50a-e8327c6a31ce",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "29e73319-2ce1-4c9a-99db-56ff6c8651ad"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f8d4e3f0-1138-4235-9f59-2c994c99b855"
+        }
+      ],
+      "x": 856,
+      "y": 4153,
+      "rtype": "Control",
+      "rsubtype": "Wait",
+      "formdata": [
+        "1",
+        "seconds"
+      ],
+      "formnames": [
+        "waitduration",
+        "unit"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "permissions_2",
+      "guid": "29e73319-2ce1-4c9a-99db-56ff6c8651ad",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "834fdeb6-ebf6-4238-a5f7-f9c7a31b01ae"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2a65cbbf-e1e3-4711-a50a-e8327c6a31ce"
+        }
+      ],
+      "x": 1022,
+      "y": 4166,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticket_channel.id}",
+        "${tempVars.selectinteraction.member.id}",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "sendping_1",
+      "guid": "834fdeb6-ebf6-4238-a5f7-f9c7a31b01ae",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "0ca3581d-1181-401b-8110-16a2c5f9976e"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "29e73319-2ce1-4c9a-99db-56ff6c8651ad"
+        }
+      ],
+      "x": 1194,
+      "y": 4167,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.question_channel.id}",
+        "<@811210927126872094> <@991758864544448562>",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "SendTicketEmbed_1",
+      "guid": "0ca3581d-1181-401b-8110-16a2c5f9976e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f33031f8-74b2-4b1e-b2e0-d497858d2dde"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "834fdeb6-ebf6-4238-a5f7-f9c7a31b01ae"
+        }
+      ],
+      "x": 1374,
+      "y": 4154,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.question_channel.id}",
+        "0FFF8F",
+        "Welcome to Questions/Other",
+        "",
+        "",
+        "",
+        "",
+        "What is your question?\n\nOur Support Team [Kilian, Flo] will help you as soon as possible.",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "button",
+          "buttons": [
+            {
+              "label": "Claim",
+              "customid": "claim",
+              "style": "PRIMARY",
+              "emoji": "✅",
+              "URL": "",
+              "ephemeral": false
+            },
+            {
+              "label": "Close",
+              "customid": "close",
+              "style": "DANGER",
+              "emoji": "🔒",
+              "URL": "",
+              "ephemeral": false
+            }
+          ]
+        }
+      ],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Deletet",
+      "guid": "5cc24334-399c-4fe2-a9a8-af37db846a0b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4bcd0501-33b1-44f3-9f00-ee336bf40c83"
+        }
+      ],
+      "x": 1551,
+      "y": 4027,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.selectinteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "deletetin",
+      "guid": "f33031f8-74b2-4b1e-b2e0-d497858d2dde",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0ca3581d-1181-401b-8110-16a2c5f9976e"
+        }
+      ],
+      "x": 1551,
+      "y": 4174,
+      "rtype": "Interaction",
+      "rsubtype": "Delete Interaction Reply",
+      "formdata": [
+        "${tempVars.selectinteraction}"
+      ],
+      "formnames": [
+        "interactionobject"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    }
+  ]
+}
